@@ -23,5 +23,12 @@ public class RemoveVowelTest {
         String result=ob.places("India");
         assertEquals("nd",result);
     }
+    @Test
+    public void givenIntegerShouldReturErrorMessage()
+    {
+        boolean result=ob.isNumeric("123123");
+        assertEquals(true,result);
+    }
+
 
 }

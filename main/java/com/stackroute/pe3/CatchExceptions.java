@@ -1,6 +1,9 @@
 package com.stackroute.pe3;
-
-public class CatchExceptions {
+/*will generate exceptions of type NegativeArraySizeException,
+IndexOutOfBoundsException, NullPointerException. Record the catching of each exception by
+displaying the message stored in the exception object.*/
+public class CatchExceptions
+{
     public static void  main(String[] args)
     {
         try{

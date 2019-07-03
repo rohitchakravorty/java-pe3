@@ -1,6 +1,7 @@
 package com.stackroute.pe3;
-
-public class Exception {
+/*throws an object of class Exception inside a try block.*/
+public class Exception
+{
     public static void main(String[] args)
     {
         try {

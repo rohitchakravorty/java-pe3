@@ -1,17 +1,19 @@
 package com.stackroute.pe3;
-
-public class MatrixAddition {
+/*to compute the addition of two matrix, Read the number of rows and columns
+as input, also the values of each matrix*/
+public class MatrixAddition
+{
     int[][] matrix1,matrix2;
     int rows,columns;
 
-    public void MatrixInitialisation(int rows,int columns)
+    public void MatrixInitialisation(int rows,int columns)  //Creating the matrix
     {
         this.rows=rows;
         this.columns=columns;
         matrix1=new int[rows][columns];
         matrix2=new int[rows][columns];
     }
-    public void setMatrices(int[] a,int[] b)
+    public void setMatrices(int[] a,int[] b)     //Setting the matrix
     {    int k=0;int l=0;
         for(int i=0;i<rows;i++)
         {
@@ -21,7 +23,7 @@ public class MatrixAddition {
             }
         }
     }
-    public Integer[][] addMatrices(int[][]matrix1,int[][]matrix2)
+    public Integer[][] addMatrices(int[][]matrix1,int[][]matrix2)     //Add the matrices
     {   Integer[][] sum= new Integer[rows][columns];
         for(int i=0;i<rows;i++)
         {

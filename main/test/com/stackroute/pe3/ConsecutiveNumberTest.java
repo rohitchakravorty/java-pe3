@@ -31,4 +31,10 @@ public class ConsecutiveNumberTest {
         String result=ob.checkConsecutiveNumbers("1 2 3 4 4");
         assertEquals("not consecutive",result);
         }
+        @Test
+        public void givenNotIntegerShouldReturErrorMessage()
+        {
+                boolean result=ob.isNumeric("abcd");
+                assertEquals(false,result);
+        }
 }

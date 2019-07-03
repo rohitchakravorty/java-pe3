@@ -27,5 +27,11 @@ public class ChessPatternTest {
                 "BB Ww BB Ww \n" +
                 "BB Ww BB Ww \n",result);
     }
+    @Test
+    public void givenNotIntegerShouldReturErrorMessage()
+    {
+        boolean result=ob.isNumeric("abcd");
+        assertEquals(false,result);
+    }
 
 }
